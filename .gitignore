@@ -1,3 +1,12 @@
 /.venv
-/datasets
+/datasets/customers_dataset.csv
+/datasets/geolocation_dataset.csv
+/datasets/order_items_dataset.csv
+/datasets/order_payments_dataset.csv
+/datasets/order_reviews_dataset.csv
+/datasets/orders_dataset.csv
+/datasets/product_category_name_translation.csv
+/datasets/products_dataset.csv
+/datasets/sellers_dataset.csv
+/datasets/New Text Document.txt
 */__pycache__
