@@ -1,0 +1,7 @@
+jupyter ~= 1.1
+streamlit ~= 1.42
+pandas ~= 2.2
+seaborn ~= 0.13
+matplotlib ~= 3.10
+squarify ~= 0.4
+streamlit-option-menu ~= 0.4
