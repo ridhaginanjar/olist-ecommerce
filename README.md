@@ -3,7 +3,8 @@
 Doing an Explanatory Data Analysis (EDA) for Olist E-Commerce Dataset.
 
 Available at Kaggle
-[https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce](Olist E-Commerce Dataset)
+
+ [Olist E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 ## The Purpose of Analysis
 The purpose of analysis is answering two defined questions:
