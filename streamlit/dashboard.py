@@ -6,15 +6,15 @@ import seaborn as sns
 
 from streamlit_option_menu import option_menu
 
-champions = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/champions.csv", index_col=0)
-city_most_order_40 = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/city_most_order_40.csv", index_col=0)
-city_most_order = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/city_most_order.csv", index_col=0)
-top_frequency = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/top_frequency.csv", index_col=0)
-top_monetary = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/top_monetary.csv", index_col=0)
-top_product_most_buy = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/top_product_most_buy.csv", index_col=0)
-top_recency = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/top_recency.csv", index_col=0)
-rfm = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/rfm.csv", index_col=0)
-product_most_buy = pd.read_csv("~/Dicoding/analisis-data-dicoding/submission-analisis-data/datasets/finals/product_most_buy.csv", index_col=0)
+champions = pd.read_csv("datasets/finals/champions.csv", index_col=0)
+city_most_order_40 = pd.read_csv("datasets/finals/city_most_order_40.csv", index_col=0)
+city_most_order = pd.read_csv("datasets/finals/city_most_order.csv", index_col=0)
+top_frequency = pd.read_csv("datasets/finals/top_frequency.csv", index_col=0)
+top_monetary = pd.read_csv("datasets/finals/top_monetary.csv", index_col=0)
+top_product_most_buy = pd.read_csv("datasets/finals/top_product_most_buy.csv", index_col=0)
+top_recency = pd.read_csv("datasets/finals/top_recency.csv", index_col=0)
+rfm = pd.read_csv("datasets/finals/rfm.csv", index_col=0)
+product_most_buy = pd.read_csv("datasets/finals/product_most_buy.csv", index_col=0)
 
 
 # Sidebar navigation
