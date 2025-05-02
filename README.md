@@ -4,7 +4,7 @@ Doing an Explanatory Data Analysis (EDA) for Olist E-Commerce Dataset.
 
 Available at Kaggle
 
- [Olist E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+[Olist E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 ## The Purpose of Analysis
 The purpose of analysis is answering two defined questions:
@@ -40,3 +40,8 @@ streamlit run ./streamlit/dashboard.py
 ```
 4. Open the Apps on localhost.
 Usually, port is 8051 -> localhost:8501
+
+# Available on Streamlit Cloud
+Find the apps on Streamlit Cloud
+
+[https://olist-ecommerce-analysis.streamlit.app/](https://olist-ecommerce-analysis.streamlit.app/)
