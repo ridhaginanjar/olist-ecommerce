@@ -129,7 +129,3 @@ if selected == 'RFM Analysis':
     with tab4:
         filtered_monetary = top_monetary.head(50)
         st.table(data=filtered_monetary)
-    
-
-
-
