@@ -15,6 +15,7 @@ top_product_most_buy = pd.read_csv("datasets/finals/top_product_most_buy.csv", i
 top_recency = pd.read_csv("datasets/finals/top_recency.csv", index_col=0)
 rfm = pd.read_csv("datasets/finals/rfm.csv", index_col=0)
 product_most_buy = pd.read_csv("datasets/finals/product_most_buy.csv", index_col=0)
+all_df = pd.read_csv("datasets/finals/final_df.csv", index_col=0)
 
 
 # Sidebar navigation
@@ -77,6 +78,29 @@ if selected == 'Exploratory Data Analysis (EDA)':
             Di kota Sao Paulo, kategori produk Beleza Saude, Cama Mesa Banho, dan Relogios Presentes merupakan urutan ketiga teratas yang berhasil terjual dan menjadi paling banyak dibeli.
             Ketiga barang tersebut memberikan kontribusi besar pada 70% transaksi yang terjadi di kota tersebut.
             """)
+    st.markdown("""
+            Untuk melihat lebih detail produk apa saja yang memberikan sumbangsih transaksi terbesar di kota Sao Paulo, silakan gunakan filter di bawah ini.
+            """)
+    
+    min_contrib = 0.0
+    max_contrib = 1.0
+    default_contrib = 0.7
+
+    max_cumcut = st.slider(
+        # Menampilkan kategori yang menyumbang kumulatif.
+        "Pilih persentase kontribusi produk: ", min_contrib, max_contrib, default_contrib
+    )
+
+    # Mencari produk yang memberikan sumbangsih 70% pada transaksi
+    top_product_most_buy = product_most_buy[product_most_buy['cumcut'] <= max_cumcut]
+    top_product_most_buy.drop(columns='cumulative_sum', inplace=True)
+    rename_cols = {
+        "cumcut": "contribution"
+    }
+    top_product_most_buy.rename(columns=rename_cols, inplace=True)
+    top_product_most_buy['contribution'] = round(top_product_most_buy['contribution'] * 100).astype("str") + "%"
+    st.dataframe(top_product_most_buy)
+    
 
 if selected == 'RFM Analysis':
     st.title("Customer Segmentation with RFM (Recency, Frequency, Monetary) Analysis")
